@@ -1,0 +1,327 @@
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('../Fonts/Roboto-Bold.eot') format('eot'), 
+        url('../Fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../Fonts/Roboto-Bold.woff') format('woff'),
+        url('../Fonts/Roboto-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('../Fonts/Roboto-Light.eot') format('eot'), 
+      url('../Fonts/Roboto-Light.woff2') format('woff2'),
+      url('../Fonts/Roboto-Light.woff') format('woff'),
+      url('../Fonts/Roboto-Light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url('../Fonts/Roboto-Medium.eot') format('eot'), 
+       url('../Fonts/Roboto-Medium.woff2') format('woff2'),
+       url('../Fonts/Roboto-Medium.woff') format('woff'),
+       url('../Fonts/Roboto-Medium.ttf') format('ttf');
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+html, body {
+  font: 18px/28px 'RobotoMedium';
+  background: #d3d3d3; 
+  color: #ffffff;
+  height: 100%;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+ }
+
+ .pad-lr-5{
+   padding: 0 5px;
+ }
+
+.main-section .left-section{
+  background: #c6c6c6;
+  width: 64%;
+  float: left;
+  padding: 25px 2%;
+  height: 100%;
+ }
+
+.main-section .right-section{
+  width: 36%;
+  float: left;
+  padding: 25px 2%;
+  height: 100%;
+ }
+
+ .left-section header h4{
+  font-family: 'RobotoLight';
+  font-weight: normal;
+ }
+
+ .left-section main{
+  margin: 20px 0;
+}
+
+.left-section main .genotype-section{
+  margin: 20px 0;
+}
+
+.left-section main .geno-head{
+  text-align: center;
+}
+
+.left-section main .genotype-top{
+  padding: 15px 20%;
+  margin: 0 auto;
+}
+
+.left-section main .genotype-top input[type="radio"]{
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background: #fff !important;
+  border: 3px solid #E07567 !important;
+}
+
+.left-section main .genotype-top label{
+  cursor: pointer;
+  display: block;
+  background: #e8e8e8;
+  border: 3px solid transparent;
+  float: left;
+  margin: 0 1%;
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  width: 90px;
+}
+
+.left-section main .genotype-top label:hover{
+  background: #fff;
+  border: 3px solid #E07567;
+}
+
+.left-section main .genotype-left{
+  float: left;
+  width: 10%;
+}
+
+.left-section main .genotype-combination{
+  float: left;
+  width: 60%;
+  margin: 0 15%;
+}
+
+.left-section main .genotype-left label{
+  cursor: pointer;
+  display: block;
+  background: #e8e8e8;
+  border: 3px solid transparent;
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  width: 90px;
+  margin-bottom: 5px;
+}
+
+.left-section main .genotype-left label:hover{
+  background: #fff;
+  border: 3px solid #E07567;
+}
+
+.left-section main figure figcaption{
+  font-size: .85em;
+  color: #585858;
+  text-align: center;
+}
+
+.left-section main .genotype-combination .genotype-row{
+  height: 100px;
+}
+
+.left-section main .genotype-combination .genotype-row .genotype-head{
+  float: left;
+  font-size: 1.5em;
+  color: #585858;
+  width: 33%;
+  height: 100%;
+  text-align: center;
+  padding-top: 57px;
+  vertical-align: bottom;
+}
+
+.left-section main .genotype-combination .genotype-row .genotype-sec{
+  float: left;
+  width: 33%;
+  height: 120px;
+  background: white;
+  border: 1.5px solid #c6c6c6;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.left-section main .genotype-combination .genotype-row .genotype-sec img{
+  margin: 0 33%;
+}
+
+.left-section main .genotype-combination .genotype-row .genotype-sec figcaption{
+  font-size: 1.5em;
+  color: #585858;
+}
+
+.right-section {
+
+}
+
+.right-section > header{
+  margin-bottom: 60px;
+}
+
+.right-section header a{
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 1%;
+}
+.right-section header a em{
+  font-style: normal;
+}
+
+.right-section .phenotype-section header, .right-section .genotype-section header{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.right-section .genotype-section{
+  margin-top: 25px;
+}
+
+.right-section .genotype-section .genotype-ratio{
+  font-size: 1.5em;
+  color: #585858;
+  text-align: center;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #585858;
+    stroke-width: 3px;
+    shape-rendering: crispEdges;
+}
+
+.g-chart text{
+  font-family: "RobotoMedium";
+  font-size: 1.5em;
+  color: #585858;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+
+  .left-section main .genotype-combination .genotype-row .genotype-sec img {
+    margin: 0 16%;
+    width: 70%;
+  }
+
+  .main-section .left-section {
+    width: 55%;
+  }
+
+  .main-section .right-section {
+    width: 45%;
+  }
+
+  .left-section main .genotype-top {
+    padding: 15px 10%;
+  }
+
+  .left-section main .genotype-left {
+    float: left;
+    width: 24%;
+  }
+
+  .left-section main .genotype-combination {
+    float: left;
+    width: 76%;
+    margin: 0;
+  }
+
+  .left-section main .genotype-left label, .left-section main .genotype-top label {
+    height: 106px;
+  }
+
+  .left-section main .genotype-left label img, .left-section main .genotype-top label img{
+    width: 70%;
+  }
+
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  body{
+    background: olive;
+  }
+
+  .main-section .left-section {
+    width: 100%;
+  }
+
+  .main-section .right-section {
+    width: 100%;
+  }
+
+  .left-section main .genotype-top {
+    padding: 15px 3%;
+    margin: 0 auto;
+  }
+
+  .left-section main .genotype-left {
+    float: left;
+    width: 29%;
+  }
+
+  .left-section main .genotype-combination {
+    float: left;
+    width: 55%;
+    margin: 0 8%;
+  }
+
+  .left-section main .genotype-combination .genotype-row {
+    height: 103px;
+  }
+
+  .left-section main .genotype-combination .genotype-row .genotype-sec {
+    height: 103px;
+  }
+
+  .left-section main .genotype-combination .genotype-row .genotype-sec img {
+    margin: 0 10%;
+    width: 78%;
+  }
+  
+}

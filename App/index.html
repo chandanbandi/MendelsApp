@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mendels App</title>
+    <link rel="stylesheet" href="../App/Styles/styles.css"/>
+</head>
+<body>
+    <!-- Main section starts -->
+    <section class="main-section">
+        <article class="left-section">
+            <header>
+                <h2 class="left">Logo</h2> <div class="left pad-lr-5">|</div> <h4 class="left">Mendelian Inheritance</h4>
+                <div class="clearfix"></div>
+            </header>
+            <main>
+                <section class="geno-head">
+                    <h3>Select two pea plant genotypes to cross.</h3>
+                </section>
+                <div class="genotype-top">
+                    <input id="topradio-YY" type="radio" name="top" value="YY" style="display:none">
+                    <label for="topradio-YY">
+                        <figure>
+                            <img src="../App/Assets/yellow_pea.svg" alt="YY">
+                            <figcaption>YY</figcaption>
+                        </figure> 
+                    </label>
+                   
+                    <input id="topradio-Yy" type="radio" name="top" value="Yy" checked style="display:none">
+                    <label for="topradio-Yy">
+                        <figure>
+                            <img src="../App/Assets/yellow_pea.svg" alt="Yy">
+                            <figcaption>Yy</figcaption>
+                        </figure> 
+                    </label>
+
+                    <input id="topradio-yy" type="radio" name="top" value="yy" style="display:none">
+                    <label for="topradio-yy">
+                        <figure>
+                            <img src="../App/Assets/green_pea.svg" alt="yy">
+                            <figcaption>yy</figcaption>
+                        </figure> 
+                    </label>
+
+                    <div class="clearfix"></div>
+                </div>
+                <section class="genotype-section">
+                    <div class="genotype-left">
+                            <input id="left-YY" type="radio" name="left" value="YY" style="display:none">
+                            <label for="left-YY">
+                                <figure>
+                                    <img src="../App/Assets/yellow_pea.svg" alt="YY">
+                                    <figcaption>YY</figcaption>
+                                </figure> 
+                            </label>
+
+                            <input id="left-Yy" type="radio" name="left" value="Yy" checked style="display:none">
+                            <label for="left-Yy">
+                                <figure>
+                                    <img src="../App/Assets/yellow_pea.svg" alt="Yy">
+                                    <figcaption>Yy</figcaption>
+                                </figure> 
+                            </label>
+
+                            <input id="left-yy" type="radio" name="left" value="yy" style="display:none">
+                            <label for="left-yy">
+                                <figure>
+                                    <img src="../App/Assets/green_pea.svg" alt="yy">
+                                    <figcaption>yy</figcaption>
+                                </figure> 
+                            </label>
+                    </div>
+                    <div class="genotype-combination">
+                        <div class="genotype-row">
+                            <div class="genotype-head"></div>
+                            <div class="genotype-head" id="h0"></div>
+                            <div class="genotype-head" id="h1"></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="genotype-row">
+                            <div class="genotype-head" id="h2"></div>
+                            <div class="genotype-sec">
+                                <figure>
+                                    <img src="../App/Assets/yellow_pea.svg" alt="yellow">
+                                    <figcaption id="d0"></figcaption>
+                                </figure> 
+                            </div>
+                            <div class="genotype-sec">
+                                <figure>
+                                    <img src="../App/Assets/yellow_pea.svg" alt="yellow">
+                                    <figcaption id="d1"></figcaption>
+                                </figure> 
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="genotype-row">
+                            <div class="genotype-head" id="h3"></div>
+                            <div class="genotype-sec">
+                                <figure>
+                                    <img src="../App/Assets/yellow_pea.svg" alt="yellow">
+                                    <figcaption id="d2"></figcaption>
+                                </figure> 
+                            </div>
+                            <div class="genotype-sec">
+                                <figure>
+                                    <img src="../App/Assets/yellow_pea.svg" alt="yellow">
+                                    <figcaption id="d3"></figcaption>
+                                </figure> 
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </section>
+            </main>
+        </article>
+        <article class="right-section">
+                <header>
+                    <a href=""><em>i</em></a>
+                    <a href=""><em>x</em></a>
+                    <div class="clearfix"></div>
+                </header>
+                <aside>
+                    <section class="phenotype-section">
+                        <header>phenotypic ratio</header>
+                        <article class="g-chart">
+
+                        </article>
+                    </section>
+                    <section class="genotype-section">
+                        <header>genotypic ratio</header>
+                        <article class="genotype-ratio">
+
+                        </article>
+                    </section>
+                </aside>
+        </article>
+        <div class="clearfix"></div>
+    </section>
+    <!-- Main section ends -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="../App/Scripts/Index.js"></script>
+</body>
+</html>
